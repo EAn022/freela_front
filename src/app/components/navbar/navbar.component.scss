@@ -1,0 +1,25 @@
+
+
+nav{
+    background-color: var(--color-gray-light);
+
+    a{
+        color: var(--color-gray-dark);
+        font-weight: bold;
+        
+    }
+
+    [aria-current] {
+        color: var(--color-purple-tertiary); /* Cor para todos os elementos com aria-current */
+    }
+
+    #sair{
+        color: var(--color-purple-tertiary)
+    }
+
+    img{
+        height: 16px;
+    }
+    
+}
+
