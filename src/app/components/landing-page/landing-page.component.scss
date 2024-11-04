@@ -146,5 +146,63 @@
         }
     }
 }
+// Terceira seção
+.third_section {
+    background-color: var(--color-gray-light);
+    width: 100%;
+    height: 100vh;
+    .container_geral_third {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100%; 
+        .container_third {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--color-purple-primary);
+            width: 100%;
+            padding-top: 5vh;
 
+            .text_container_third{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    color: var(--color-black-light);
+                    font-size: 36px;
+                    margin-top: 5vh;
+                    font-weight: bold;
+
+                }
+                p{
+                    font-size: 20px;
+                    font-style: italic;
+                    color: var(--color-white-secondary);
+                    margin-top: 1vh;
+                }
+            }
+            .example-icons{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 3vh;
+                margin-left: 60px;
+                p{
+                    color: var(--color-white-secondary);
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-top: 1vh;
+                }
+                .image_example_icon{
+                    background-color: var(--color-white-secondary);
+                    padding: 13vh;
+                    padding-top: 30px;
+                    padding-bottom: 40px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
 
