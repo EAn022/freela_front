@@ -4,42 +4,52 @@
 .navbar-nav .nav-link{
     color: var(--color-gray-dark);
 }
-.principal_text{
-    //ajustar cor de fundo
+//Primeira seção
+.first_section{
+    background-color: var(--color-purple-primary);
+    width: 100%;
+    height: 100vh;
+    margin-top: 0px;
 
     .container{
         display: flex;
-        
-        margin-left: 12vh;
-        // margin-right: 10vh;
-        margin-top: 15vh;
+        margin-right: 5vh;
+        margin-left: 15vh;
 
         .text_container{
         display: flex;
         flex-direction: column;
         margin-bottom: 0px;
+        margin-top: 15vh;
+        
+
         h1{
-            color: var(--terciary-color);
+            color: var(--color-purple-tertiary);
+            font-weight: bold;
             font-size: 24px;
             margin-bottom: 6vh;
         }
         .marketing_text{
-            color: var(--secondary-color);
+            color: var(--color-white-secondary);
             font-size: 64px;
+            font-style: italic;
             line-height: 0.8;
+            margin-right: 15px;
+            width: 620px;
             p {
                 margin-bottom: 0px;
             }
             .principal{
             font-weight: bold;
-            color: var(--terciary-color);
+            color: var(--color-purple-tertiary);
             margin-bottom: 10px;
             }
         }
         
         .marketing_subtitle{
             font-size: 24px;
-            color: var(--terciary-color);
+            color: var(--color-purple-tertiary);
+            font-style: italic;
             margin-top: 7vh;
         }
     }
@@ -48,18 +58,93 @@
         align-items: center;
         flex-direction: column;
         margin-right: 0px;
+        margin-top: 15vh;
+
+        
         p{
+            display: flex;
+            color: var(--color-white-secondary);
             font-size: 20px;
             font-weight: bold;
-            color: var(--secondary-color);
+            margin-top: 5px;
         }
         .image_services{
-            background-color: var(--terciary-color); 
-            padding: 30px; 
+            background-color: var(--color-purple-tertiary);
+            padding: 30px;
+            padding-top: 40px;
+            padding-bottom: 40px;
             border-radius: 10px;
         }
+        .centered_text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
     }
+    .example_services.down{
+        margin-top: 8vh;
     }
-    
+    } 
 }
+
+// Segunda seção
+.second_section {
+    background-color: var(--color-gray-light);
+    width: 100%;
+    height: 100vh;
+    .container_geral_second {
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        height: 100%; 
+        .container_second {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: var(--color-white-secondary);
+            width: 100%;
+            padding-top: 5vh;
+
+            .text_container_second{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h2{
+                    color: var(--color-black-light);
+                    font-size: 36px;
+                    margin-top: 5vh;
+                    font-weight: bold;
+
+                }
+                p{
+                    font-size: 20px;
+                    font-style: italic;
+                    margin-top: 1vh;
+                }
+            }
+            .example-icons{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                margin-top: 3vh;
+                margin-left: 60px;
+                p{
+                    color: var(--color-gray-dark);
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-top: 1vh;
+                }
+                .image_example_icon{
+                    background-color: var(--color-purple-primary);
+                    padding: 13vh;
+                    padding-top: 30px;
+                    padding-bottom: 40px;
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
 
