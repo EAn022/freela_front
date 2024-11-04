@@ -1,23 +1,24 @@
-
 <div class="cards">
+    <!-- Estrutura de repetição -->
+    @for(servico of servicos; track servicos) {
+        <!-- cards -->
+        <div class="card">
+            <div class="card-title d-flex justify-content-between">
+                <h6>{{servico.nome}}</h6>
+                <span>{{servico.status}}</span>
+            </div>
 
-@for(item of nomes_teste, track nomes_teste){
-    <p>{{item.nome}}</p>
-}
+            <h6>{{servico.titulo}}</h6>
+            <p class="paragraph-03">Responsabilidades:</p>
 
-    <div class="card">
-        <div class="card-title d-flex justify-content-between">
-            <h6>Nome completo</h6>
-            <span>Disponível</span>
+            <ul>
+                <li class="paragraph-03">Desenvolver e manter aplicações web responsivas utilizando HTML, CSS e JavaScript.</li>
+                <li class="paragraph-03">Colaborar com designers e outros desenvolved...</li>
+            </ul>
+
+            <button class="btn-proposta">Tenho interesse</button>
         </div>
-        <h6>Título do projeto</h6>
-        <p class="paragraph-03">Responsabilidades:</p>
-        <ul>
-            <li class="paragraph-03">Desenvolver e manter aplicações web responsivas utilizando HTML, CSS e JavaScript.</li>
-            <li class="paragraph-03">Colaborar com designers e outros desenvolved...</li>
-        </ul>
-        <button class="btn-proposta">Tenho interesse</button>
-    </div>
+    }
 </div>
 
 
