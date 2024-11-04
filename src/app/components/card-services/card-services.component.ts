@@ -16,5 +16,4 @@ export class CardServicesComponent {
     {nome: 'Maria Ramalho',titulo: 'Deletar validação mysql', status: 'disponível'},
     {nome: 'Jonas da Mata',titulo: 'Criar validação mysql', status: 'disponível'},
   ]
-  
 }

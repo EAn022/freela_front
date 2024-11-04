@@ -13,5 +13,9 @@ import { CardServicesComponent } from '../card-services/card-services.component'
   styleUrl: './home-profissional.component.scss'
 })
 export class HomeProfissionalComponent {
+  currentLink: string = 'home'; // Inicialmente, 'home' é o ativo
 
+  setActive(link: string) {
+    this.currentLink = link;
+  }
 }

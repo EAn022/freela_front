@@ -1,26 +1,49 @@
 <nav class="navbar navbar-expand-md bg-body-tertiary px-5">
     <div class="container-fluid justify-content-end">
+      <!-- hamburguer button -->
       <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+        <!-- seções -->
         <ul class="navbar-nav">
           <li class="nav-item me-5">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a  
+              class="nav-link"  
+              (click)="setActive('home')" 
+              [attr.aria-current]="currentLink === 'home' ? 'page' : undefined" 
+              href="#">Home</a>
           </li>
           <li class="nav-item me-5">
-            <a class="nav-link" href="#">Meu perfil</a>
+            <a 
+              class="nav-link"  
+              (click)="setActive('perfil')" 
+              [attr.aria-current]="currentLink === 'perfil' ? 'page' : undefined" 
+              href="#">
+              Meu perfil
+            </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Minhas propostas</a>
+            <a 
+              class="nav-link" 
+              (click)="setActive('propostas')" 
+              [attr.aria-current]="currentLink === 'propostas' ? 'page' : undefined" 
+              href="#"
+              href="#">
+              Minhas propostas
+            </a>
           </li>
         </ul>
+        <!-- logout -->
         <ul class="navbar-nav">
           <li class="nav-item d-flex align-items-center">
             <img src="icons/sair-roxo.svg" alt="icone sair">
             <a id="sair" class="nav-link" href="#">Sair</a>
           </li>
         </ul>
+
       </div>
+
     </div>
   </nav>

@@ -1,8 +1,19 @@
 <div class="home">
+    <!-- navbar -->
     <header>
-        <app-navbar></app-navbar>
+        <app-navbar (activeLinkChange)="setActive($event)"></app-navbar>
     </header>
-    <app-card-services></app-card-services>
-    
-    <p>home-profissional works!</p>
+    <!-- conteúdo -->
+    <section>
+        @if (currentLink === 'home') {
+            <app-card-services></app-card-services>
+        }
+        @if (currentLink === 'perfil') {
+            componente perfil
+        }
+        @if (currentLink === 'propostas') {
+            componente proposta
+        }
+    </section>
+
 </div>
