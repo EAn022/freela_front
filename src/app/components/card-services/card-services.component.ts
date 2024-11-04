@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './card-services.component.scss'
 })
 export class CardServicesComponent {
+  nomes_teste = [
+    {nome:'jonas'}
+  ]
+
+
 
 }
