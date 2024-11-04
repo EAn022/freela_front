@@ -1,8 +1,11 @@
-
-
 nav{
-    background-color: var(--color-gray-light);
+    background-color: var(--color-gray);
     height: 90px;
+
+    .navbar-toggler{
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
     
     a{
         color: var(--color-gray-dark);
