@@ -4,6 +4,7 @@
 .navbar-nav .nav-link{
     color: var(--color-gray-dark);
 }
+
 //Primeira seção
 .first_section{
     background-color: var(--color-purple-primary);
@@ -75,12 +76,6 @@
             padding-bottom: 40px;
             border-radius: 10px;
         }
-        .centered_text{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
     }
     .example_services.down{
         margin-top: 8vh;
@@ -122,13 +117,18 @@
                     font-style: italic;
                     margin-top: 1vh;
                 }
+                .text_alight{
+                    margin-top: 0px;
+                    line-height: 0.5;
+                }
             }
             .example-icons{
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 margin-top: 3vh;
-                margin-left: 60px;
+                margin-left: 7vh;
+                margin-right: 7vh;
                 p{
                     color: var(--color-gray-dark);
                     font-size: 24px;
@@ -181,13 +181,18 @@
                     color: var(--color-white-secondary);
                     margin-top: 1vh;
                 }
+                .text_alight{
+                    margin-top: 0px;
+                    line-height: 0.5;
+                }
             }
             .example-icons{
                 display: flex;
                 align-items: center;
                 flex-direction: column;
                 margin-top: 3vh;
-                margin-left: 60px;
+                margin-left: 7vh;
+                margin-right: 7vh;
                 p{
                     color: var(--color-white-secondary);
                     font-size: 24px;
