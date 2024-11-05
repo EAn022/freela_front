@@ -1,8 +1,12 @@
-
-
 nav{
-    background-color: var(--color-gray-light);
+    background-color: var(--color-gray);
+    height: 90px;
 
+    .navbar-toggler{
+        margin-top: 21px;
+        margin-bottom: 21px;
+    }
+    
     a{
         color: var(--color-gray-dark);
         font-weight: bold;
@@ -10,11 +14,11 @@ nav{
     }
 
     [aria-current] {
-        color: var(--color-purple-tertiary); /* Cor para todos os elementos com aria-current */
+        color: var(--color-purple-primary); /* Cor para todos os elementos com aria-current */
     }
 
     #sair{
-        color: var(--color-purple-tertiary)
+        color: var(--color-purple-primary)
     }
 
     img{

@@ -1,0 +1,54 @@
+.profile{
+    .data{
+        width: 600px;
+
+        h4{
+            color: var(--color-gray-dark);
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .about-me{
+            border-radius: 5px;
+            border: 1px solid var(--color-gray-dark);
+            width: 100%;
+            min-height: 160px;
+
+            p{
+                color: var(--color-gray-dark);
+                font-size: 16px;
+                font-weight: 300;
+            }
+        }
+
+        h6{
+            color: var(--color-gray-dark);
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        li{
+            color: var(--color-gray-dark);
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        button{
+            width: 264px;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--color-purple-primary);
+            padding: 12px;
+            margin-left: auto;
+            margin-right: auto;
+
+            color: var(--color-purple-tertiary);
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    .proposals{
+        max-width: 400px;
+    }
+}
