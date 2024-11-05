@@ -9,5 +9,9 @@ import { Component } from '@angular/core';
 
 })
 export class LandingPageComponent {
+  isSidebarOpen = false;
 
+  toggleSidebar() {
+    this.isSidebarOpen = !this.isSidebarOpen;
+  }
 }
