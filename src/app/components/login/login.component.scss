@@ -1,0 +1,138 @@
+body{
+    background: linear-gradient(
+        90deg,
+        rgba(125, 60, 152, 0.6) 0%, 
+        rgba(173, 125, 192, 0.6) 49%, 
+        rgba(210, 180, 222, 0.6) 100%
+    );
+    height: 100vh;
+    section{
+        box-sizing: border-box;
+
+        .container{
+            display: flex;
+            justify-content: space-around;
+
+            .text_container{
+                margin-top: 23vh;
+                h5{
+                    font-size: 24px;
+                    color: var(--color-white-secondary);
+                    margin-bottom: 6vh;
+                }
+                .marketing_text{
+                    color: var(--color-white-secondary);
+                    font-size: 64px;
+                    font-style: italic;
+                    line-height: 0.8;
+                    p {
+                        margin-bottom: 0px;
+                    }
+                    .principal{
+                        font-weight: bold;
+                        color: rgba(173, 125, 192, 0.6);
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            form{
+                margin-top: 20vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: var(--color-purple-tertiary);
+                border-radius: 10px;
+                opacity: 0.64;
+                padding: 15px;
+                h3{
+                    font-size: 36px;
+                    color:var(--color-white-secondary);
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                .email_input{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    gap: 2px;
+                    label{
+                        font-size: 18px;
+                        color: var(--color-white-secondary);
+                    }
+                    input{
+                        width: 330px;
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: transparent;
+                        border: 1px solid var(--color-gray-light);
+                        color: white;
+                        
+                    }
+                }
+                .password_input{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 5px;
+                    gap: 2px;
+                    position: relative;
+                    label{
+                        font-size: 18px;
+                        color: var(--color-white-secondary);
+                    }
+                    input{
+                        width: 330px;
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: transparent;
+                        border: 1px solid var(--color-gray-light);
+                        color: white;
+                    }
+                    .visibilidade_senha{
+                        position: relative;
+                    }
+                    .cadeado{
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                        width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+                        height: 20px;
+                    }
+                    
+                }
+                .forgot_password{
+                    align-self: flex-end;
+                    a{
+                        text-decoration: none;
+                        font-size: 11px;
+                        font-weight: bold;
+                        color: var(--color-white-secondary);
+
+                    }
+                }
+                .sign_in button{
+                    width: 200px;
+                    border: 0px;
+                    border-radius: 5px;
+                    background-color: var(--color-purple-primary);
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 30px;
+                    margin-top: 15px;
+                    padding-top: 6px;
+                    padding-bottom: 6px;
+                }
+                .new_account{
+                    align-self: flex-start;
+                    a{
+                        text-decoration: none;
+                        font-size: 11px;
+                        color: var(--color-white-secondary);  
+                    }
+                    
+                }
+            }
+        }
+    }
+}
