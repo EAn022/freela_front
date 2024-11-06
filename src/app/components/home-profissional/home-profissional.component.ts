@@ -18,7 +18,7 @@ import { ProposalComponent } from '../proposal/proposal.component';
   styleUrl: './home-profissional.component.scss'
 })
 export class HomeProfissionalComponent {
-  currentLink: string = 'perfil'; // Inicialmente, 'home' é o ativo
+  currentLink: string = 'home'; // Inicialmente, 'home' é o ativo
 
   setActive(link: string) {
     this.currentLink = link;
