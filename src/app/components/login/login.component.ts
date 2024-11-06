@@ -1,20 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
-  senha: string = '';
+  @ViewChild('passwordInput') passwordInput!: ElementRef;
   mostrarTexto = false;
 
-  mostrar_senha(): void {
-    this.mostrarTexto = true;
-  }
-  ocultar_senha(): void{
-    this.mostrarTexto = false;
+  toggleSenha(): void {
+    this.mostrarTexto = !this.mostrarTexto;
+    this.passwordInput.nativeElement.type = this.mostrarTexto ? 'text' : 'password';
   }
 }

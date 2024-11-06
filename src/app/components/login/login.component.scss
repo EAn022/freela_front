@@ -37,6 +37,7 @@ body{
             }
             form{
                 margin-top: 20vh;
+                width: 400px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -55,12 +56,12 @@ body{
                     flex-direction: column;
                     margin-bottom: 20px;
                     gap: 2px;
+                    width: 90%;
                     label{
                         font-size: 18px;
                         color: var(--color-white-secondary);
                     }
                     input{
-                        width: 330px;
                         height: 35px;
                         border-radius: 5px;
                         background-color: transparent;
@@ -74,18 +75,19 @@ body{
                     flex-direction: column;
                     margin-bottom: 5px;
                     gap: 2px;
+                    width: 90%;
                     position: relative;
                     label{
                         font-size: 18px;
                         color: var(--color-white-secondary);
                     }
                     input{
-                        width: 330px;
                         height: 35px;
                         border-radius: 5px;
                         background-color: transparent;
                         border: 1px solid var(--color-gray-light);
                         color: white;
+                        width: 100%;
                     }
                     .visibilidade_senha{
                         position: relative;
@@ -96,7 +98,7 @@ body{
                         top: 50%;
                         transform: translateY(-50%);
                         cursor: pointer;
-                        width: 20px; /* Ajuste o tamanho da imagem conforme necessário */
+                        width: 20px;
                         height: 20px;
                     }
                     
@@ -134,5 +136,27 @@ body{
                 }
             }
         }
+    }
+    
+}
+
+//Responsividade
+@media (max-width: 780px){
+    .text_container{
+        display: none;
+    }
+    form{
+        width: 300%;
+    }
+
+    .visibilidade_senha{
+        position: relative;
+    }
+
+    .cadeado {
+        width: 20px;
+        height: 20px;
+        right: 15px; /* Ajusta a posição */
+        cursor: pointer;
     }
 }

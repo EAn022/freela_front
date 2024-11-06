@@ -18,8 +18,8 @@
                 <div class="password_input">
                     <label for="password">Senha</label>
                     <div class="visibilidade_senha">
-                        <input type="password" id="password" ngModel="senha" [type]="mostrarTexto ? 'text': 'password'"/>
-                        <img src="/icons/cadeado-fechado.png" alt="Ícone de visibilidade da senha" (mousedown)="mostrar_senha()" (mouseup)="ocultar_senha()" (mousemove)="ocultar_senha()" class="cadeado"/>
+                        <input #passwordInput type="password" id="password" ngModel="senha"/>
+                        <img src="/icons/cadeado-fechado.png" alt="Ícone de visibilidade da senha" (click)="toggleSenha()" class="cadeado"/>
                     </div>
                     
                 </div>
