@@ -19,9 +19,8 @@
                     <label for="password">Senha</label>
                     <div class="visibilidade_senha">
                         <input #passwordInput type="password" id="password" ngModel="senha"/>
-                        <img src="/icons/cadeado-fechado.png" alt="Ícone de visibilidade da senha" (click)="toggleSenha()" class="cadeado"/>
+                        <img src="/icons/cadeado-fechado.png" @if(mostrarTexto) alt="Ícone de visibilidade da senha" (click)="toggleSenha()" class="cadeado"/>
                     </div>
-                    
                 </div>
                 <div class="forgot_password">
                     <a href>Esqueceu a senha?</a>
