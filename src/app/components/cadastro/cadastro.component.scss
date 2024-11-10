@@ -1,0 +1,189 @@
+body{
+    background: linear-gradient(
+        90deg,
+        rgba(125, 60, 152, 0.6) 0%, 
+        rgba(173, 125, 192, 0.6) 49%, 
+        rgba(210, 180, 222, 0.6) 100%
+    );
+    min-height: 100vh;
+    section{
+        box-sizing: border-box;
+        .container{
+            display: flex;
+            justify-content: space-around;
+
+            .text_container{
+                margin-top: 23vh;
+                h5{
+                    font-size: 24px;
+                    color: var(--color-white-secondary);
+                    margin-bottom: 6vh;
+                }
+                .marketing_text{
+                    color: var(--color-white-secondary);
+                    font-size: 64px;
+                    font-style: italic;
+                    line-height: 0.8;
+                    p {
+                        margin-bottom: 0px;
+                    }
+                    .principal{
+                        font-weight: bold;
+                        color: rgba(173, 125, 192, 0.6);
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            form{
+                margin-top: 15vh;
+                width: 400px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: var(--color-purple-tertiary);
+                border-radius: 10px;
+                opacity: 0.64;
+                padding: 15px;
+                margin-bottom: 5dvh;
+                h3{
+                    font-size: 36px;
+                    color:var(--color-white-secondary);
+                    margin-top: 30px;
+                    margin-bottom: 30px;
+                }
+                .email_input,
+                .nome_input,
+                .telefone_input,
+                .whatsapp_input,
+                .instituicao_input{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 20px;
+                    gap: 2px;
+                    width: 90%;
+                    label{
+                        font-size: 18px;
+                        color: var(--color-white-secondary);
+                    }
+                    input{
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: transparent;
+                        border: 1px solid var(--color-gray-light);
+                        color: white;
+                        
+                    }
+                    ::placeholder{
+                        font-size: 12px;
+                        color: var(--color-white-secondary);
+                        font-style: italic;
+                        margin-left: 25px;
+                    }
+                }
+                .password_input{
+                    display: flex;
+                    flex-direction: column;
+                    margin-bottom: 5px;
+                    gap: 2px;
+                    width: 90%;
+                    position: relative;
+                    label{
+                        font-size: 18px;
+                        color: var(--color-white-secondary);
+                    }
+                    input{
+                        height: 35px;
+                        border-radius: 5px;
+                        background-color: transparent;
+                        border: 1px solid var(--color-gray-light);
+                        color: white;
+                        width: 100%;
+                    }
+                    .visibilidade_senha{
+                        position: relative;
+                    }
+                    .cadeado{
+                        position: absolute;
+                        right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        cursor: pointer;
+                        width: 20px;
+                        height: 20px;
+                    }
+                    
+                }
+                .container_radio{
+                    display: flex;
+                    margin-top: 2vh;
+                    margin-bottom: 5vh;
+                    gap: 40px;
+                    input[type="radio"] {
+                    appearance: none;
+                    width: 20px;
+                    height: 17px;
+                    border: 2px solid var(--color-white-secondary); 
+                    border-radius: 50%; 
+                    background-color: transparent; 
+                  
+                    &:checked {
+                      background-color: var(--color-white-secondary);
+                    }
+                  }
+                  label{
+                    color: var(--color-white-secondary);
+                    font-weight: bold;
+                    font-size: 13px;
+                  }
+                  .profissional_radio{
+                    display: flex;
+                    gap: 5px;
+                  }
+                  .cliente_radio{
+                    display: flex;
+                    gap: 5px;
+                  }
+                }
+                .form_cliente,
+                .form_profissional{
+                    width: 370px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .instituicao_input{
+                        input{
+                            background-color: var(--color-gray);
+                            color: var(--color-black-light);
+                        }
+                        ::placeholder{
+                            color: var(--color-gray-dark);
+                            font-weight: bold;
+                            font-size: 15px;
+                        }
+                    }
+                }
+                .cadastro button{
+                    width: 230px;
+                    border: 0px;
+                    border-radius: 5px;
+                    background-color: var(--color-purple-primary);
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-bottom: 30px;
+                    margin-top: 15px;
+                    padding-top: 4px;
+                    padding-bottom: 4px;
+                }
+                .entrar{
+                    align-self: flex-start;
+                    a{
+                        text-decoration: none;
+                        font-size: 13px;
+                        color: var(--color-white-secondary);  
+                    }
+                    
+                }
+            }
+        }
+    }
+}

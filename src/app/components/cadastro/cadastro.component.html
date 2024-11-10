@@ -1,0 +1,78 @@
+<body>
+    <section>
+        <div class="container">
+            <div class="text_container">
+                <h5>FREELLA</h5>
+                <div class="marketing_text">
+                    <p>Transforme</p>
+                    <p class="principal">Seu conhecimento</p>
+                    <p class="ajuste_tamanho">em fonte de renda</p>
+                </div>
+            </div>
+            <form action="#">
+                <h3>Cadastre-se</h3>
+                <div class="nome_input">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="name" placeholder="Seu nome completo"/>
+                </div>
+                <div class="email_input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email"/>
+                </div>
+                <div class="password_input">
+                    <label for="password">Senha</label>
+                    <div class="visibilidade_senha">
+                        <input #passwordInput type="password" id="password" ngModel="senha"/>
+                        <img src="/icons/cadeado-fechado.png" @if(mostrarTexto) alt="Ícone de visibilidade da senha" (click)="toggleSenha()" class="cadeado"/>
+                    </div>
+                </div>
+                <div class="container_radio">
+                    <div class="profissional_radio">
+                        <input type="radio" id="profissional_cadastro" name="cadastro" (click)="toggleForm('profissional')" />
+                        <label for="profissional_cadastro">Seja um profissional</label>
+                    </div>
+                    <div class="cliente_radio">
+                        <input type="radio" id="cliente_cadastro" name="cadastro" (click)="toggleForm('cliente')" />
+                        <label for="cliente_cadastro">Seja um cliente</label>
+                    </div>
+                </div>
+                <!-- Formulário Cliente -->
+                <div *ngIf="mostrarFormularios && mostrarCliente">
+                    <div class="form_cliente">
+                        <div class="telefone_input">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                        </div>
+                        <div class="whatsapp_input">
+                            <label for="whatsapp">Whatsapp</label>
+                            <input type="tel" id="whatsapp" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                        </div>
+                    </div>
+                </div>
+                <!-- Formulário Profissional -->
+                <div *ngIf="mostrarFormularios && mostrarProfissional">
+                    <div class="form_profissional">
+                        <div class="telefone_input">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                        </div>
+                        <div class="whatsapp_input">
+                            <label for="whatsapp">Whatsapp</label>
+                            <input type="tel" id="whatsapp" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                        </div>
+                        <div class="instituicao_input">
+                            <label for="instituicao">Instituição de Ensino</label>
+                            <input type="text" id="instituicao" placeholder="Informe a instituição"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="cadastro button">
+                    <button type="submit">Cadastre-se</button>
+                </div>
+                <div class="entrar">
+                    <a href="#">Acessar minha conta</a>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
