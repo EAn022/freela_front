@@ -36,36 +36,39 @@
                         <label for="cliente_cadastro">Seja um cliente</label>
                     </div>
                 </div>
-                <!-- Formulário Cliente -->
-                <div *ngIf="mostrarFormularios && mostrarCliente">
-                    <div class="form_cliente">
-                        <div class="telefone_input">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                <div class="formulario_adicional">
+                        <!-- Formulário Cliente -->
+                    <div *ngIf="mostrarFormularios && mostrarCliente">
+                        <div class="form_cliente">
+                            <div class="telefone_input">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                            </div>
+                            <div class="whatsapp_input">
+                                <label for="whatsapp">Whatsapp</label>
+                                <input type="tel" id="whatsapp" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                            </div>
                         </div>
-                        <div class="whatsapp_input">
-                            <label for="whatsapp">Whatsapp</label>
-                            <input type="tel" id="whatsapp" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                    </div>
+                    <!-- Formulário Profissional -->
+                    <div *ngIf="mostrarFormularios && mostrarProfissional">
+                        <div class="form_profissional">
+                            <div class="telefone_input">
+                                <label for="telefone">Telefone</label>
+                                <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                            </div>
+                            <div class="whatsapp_input">
+                                <label for="whatsapp">Whatsapp</label>
+                                <input type="tel" id="whatsapp" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
+                            </div>
+                            <div class="instituicao_input">
+                                <label for="instituicao">Instituição de Ensino</label>
+                                <input type="text" id="instituicao" placeholder="Informe a instituição"/>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Formulário Profissional -->
-                <div *ngIf="mostrarFormularios && mostrarProfissional">
-                    <div class="form_profissional">
-                        <div class="telefone_input">
-                            <label for="telefone">Telefone</label>
-                            <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
-                        </div>
-                        <div class="whatsapp_input">
-                            <label for="whatsapp">Whatsapp</label>
-                            <input type="tel" id="whatsapp" placeholder="(XX) XXXXX-XXXX" mask="(00) 00000-0000"/>
-                        </div>
-                        <div class="instituicao_input">
-                            <label for="instituicao">Instituição de Ensino</label>
-                            <input type="text" id="instituicao" placeholder="Informe a instituição"/>
-                        </div>
-                    </div>
-                </div>
+                
                 <div class="cadastro button">
                     <button type="submit">Cadastre-se</button>
                 </div>
