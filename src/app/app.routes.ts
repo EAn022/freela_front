@@ -14,6 +14,6 @@ export const routes: Routes = [
     {path: 'landing', component: LandingPageComponent},
     {path: 'login', component:  LoginComponent},
     {path: 'cadastro', component: CadastroComponent},
-    {path: 'home/profissional', component: HomeProfissionalComponent}
+    {path: 'home/profissional', component: HomeProfissionalComponent},
     {path: '**', redirectTo: ''}
 ];

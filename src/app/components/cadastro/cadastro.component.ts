@@ -1,6 +1,7 @@
 import { Component, ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { provideNgxMask, NgxMaskDirective } from 'ngx-mask';
+
 @Component({
   selector: 'app-cadastro',
   standalone: true,
