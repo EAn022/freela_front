@@ -9,11 +9,11 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 export const routes: Routes = [
    
-    {path: '', component: HomePageAdminComponent},
-    {path: 'gerenciamento', component: GerenciamentoComponent},
-    {path: 'landing', component: LandingPageComponent},
+    {path: '', component: LandingPageComponent},
     {path: 'login', component:  LoginComponent},
     {path: 'cadastro', component: CadastroComponent},
+    {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/profissional', component: HomeProfissionalComponent},
+    {path: 'home/admin', component: HomePageAdminComponent},
     {path: '**', redirectTo: ''}
 ];
