@@ -4,10 +4,16 @@ import { HomeProfissionalComponent } from './components/home-profissional/home-p
 import { HomePageAdminComponent } from './components/home-page-admin/home-page-admin.component';
 import { MyProfileComponent } from './components/my-profile/my-profile.component';
 import { GerenciamentoComponent } from './components/gerenciamento/gerenciamento.component';
+import { LoginComponent } from './components/login/login.component';
+import { CadastroComponent } from './components/cadastro/cadastro.component';
 
 export const routes: Routes = [
    
     {path: '', component: HomePageAdminComponent},
     {path: 'gerenciamento', component: GerenciamentoComponent},
+    {path: 'landing', component: LandingPageComponent},
+    {path: 'login', component:  LoginComponent},
+    {path: 'cadastro', component: CadastroComponent},
+    {path: 'home/profissional', component: HomeProfissionalComponent}
     {path: '**', redirectTo: ''}
 ];

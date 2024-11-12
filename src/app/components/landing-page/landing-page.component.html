@@ -1,134 +1,119 @@
-<!-- Navbar da LandingPage -->
- <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: var(--color-gray-light) !important;">
-        <div class="container-fluid" style="margin-left: 15vh; margin-right: 20vh; padding: 3px;">
-          <button class="navbar-toggler" type="button" (click)="toggleSidebar()" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" Style="border: none;">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText" style="font-weight: bold; font-size: 18px; margin-left: auto;">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap: 35px;">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Sobre nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Dúvidas</a>
-              </li>
-            </ul>
-            <div class="navbar-end" style="display: flex; align-items: center; gap: 15vh; color: var(--color-purple-tertiary)">
-              <a class="nav-link" href="#">Cadastre-se</a>
-              <div class="login" style="display: flex; align-items: center; gap: 5px;">
-                <img src="/icons/entrar-roxo.png" alt="ícone sair" height="25">
-                <a class="nav-link" href="#">Entrar</a>
-              </div>
+<body>
+    <!-- Navbar da LandingPage -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" (click)="toggleSidebar()" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <img src="/icons/Menu_mobile.png" alt="Menu">
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre nós</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Dúvidas</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-end">
+                        <a class="nav-link" href="#">Cadastre-se</a>
+                        <div class="login">
+                            <img src="/icons/entrar-roxo.png" alt="ícone sair">
+                            <a class="nav-link" href="#">Entrar</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </nav>
+    </nav>
     <!-- Sidebar -->
     @if (isSidebarOpen) {
-        <div class="w3-sidebar w3-bar-block w3-animate-left" style="position: fixed; width: 200px; top: 0; right: 0; height: 100%; background-color: var(--color-gray-light); z-index: 1000;">
-          <button class="w3-bar-item w3-button w3-large" (click)="toggleSidebar()">&times;</button>
-          <a href="#" class="w3-bar-item w3-button">Home</a>
-          <a href="#" class="w3-bar-item w3-button">Sobre nós</a>
-          <a href="#" class="w3-bar-item w3-button">Dúvidas</a>
-          <a href="#" class="w3-bar-item w3-button">Cadastre-se</a>
-          <a href="#" class="w3-bar-item w3-button">Entrar</a>
+        <div class="sidebar bar-block animate-left">
+          <button class="bar-item button large" (click)="toggleSidebar()">
+            <img src="/icons/Sair_mobile.png" alt="Sair">
+          </button>
+          <div class="bar_style">
+            <a href="#" class="bar-item button">Home</a>
+            <a href="#" class="bar-item button">Sobre nós</a>
+            <a href="#" class="bar-item button">Dúvidas</a>
+            <a href="#" class="bar-item button">Cadastre-se</a>
+            <a href="#" class="bar-item button">
+                <img src="/icons/entrar-roxo.png" alt="Entrar">
+                <p>Entrar</p>
+            </a>
+          </div>
         </div>
-      }
-      
-    <!-- Primeira seção: Apresentação -->
+    }
+    <!-- Primeira seção: apresentação -->
     <section class="first_section">
         <div class="container">
             <div class="text_container">
-                <h1>FREELLA</h1>
+                <h5>FREELLA</h5>
                 <div class="marketing_text">
                     <p>Transforme</p>
                     <p class="principal">Seu conhecimento</p>
-                    <p class="ajuste_tamanho">Em fonte de renda</p>
+                    <p class="ajuste_tamanho">em fonte de renda</p>
                 </div>
                 <div class="marketing_subtitle">
                     <p>Aqui você pode contratar um serviço universitário</p>
                 </div>
             </div>
-            <div class="container bloco">
+            <div class="container_bloco">
                 <div class="row row-cols-2">
                     <!-- Bloco de tecnologia -->
-                    <div class="col">
-                        <div class="example_services">
-                            <div class="image_services">
-                                <img src="/icons/computador.png" alt="Computer icon">
-                            </div>
-                            <p>Tecnologia</p>
+                    <div class="example_services">
+                        <div class="image_services">
+                            <img src="/icons/computador.png" alt="Computer icon">
                         </div>
+                        <p>Tecnologia</p>
                     </div>
                     <!-- Bloco de design -->
-                    <div class="col">
-                        <div class="example_services">
-                            <div class="image_services">
-                                <img src="/icons/design.png" alt="Camera icon">
-                            </div>
-                            <p>Design</p>
+                    <div class="example_services">
+                        <div class="image_services">
+                            <img src="/icons/design.png" alt="Camera icon">
                         </div>
+                        <p>Design</p>
                     </div>
-                    
                     <!-- Bloco de administração -->
-                    <div class="col">
-                        <div class="example_services down">
-                            <div class="image_services">
-                                <img src="/icons/pessoa.png" alt="Person icon">
-                            </div>
-                            <p>Administração</p>
+                    <div class="example_services">
+                        <div class="image_services">
+                            <img src="/icons/pessoa.png" alt="Person icon">
                         </div>
+                        <p>Administração</p>
                     </div>
                     <!--Bloco de edição de imagens e videos  -->
-                    <div class="col">
-                        <div class="example_services down">
-                            <div class="image_services">
-                                <img src="/icons/camera.png" alt="Computer icon">
-                            </div>
-                            <p>Edição de  <br> Imagens e vídeos</p>
+                    <div class="example_services">
+                        <div class="image_services">
+                            <img src="/icons/camera.png" alt="Computer icon">
                         </div>
+                        <p>Edição de  <br> Imagens e vídeos</p>
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>
     </section>
     <!-- Segunda seção: Freela para cliente -->
     <section class="second_section">
         <div class="container_geral_second">
             <div class="container_second">
                 <div class="text_container_second">
-                    <h2>Como é o FREELLA para o cliente?</h2>
+                    <h3>Como é o FREELLA para o cliente?</h3>
                     <p>Facilitamos sua conexão com talentosos universitários prontos para oferecer serviços freelancer de qualidade. </p>
                 </div>
                 <div class="container_example_second">
-                    <div class="row row-cols-3">
-                        <div class="col">
-                            <div class="example-icons">
-                                <div class="image_example_icon">
-                                    <img src="/icons/Pessoa2-vector.png" alt="Icon pessoa e computador"> 
-                                </div>
-                                <p class="text_example_second">Faça o pedido</p>
-                            </div> 
-                        </div>
-                        <div class="col">
-                            <div class="example-icons">
-                                <div class="image_example_icon">
-                                    <img src="/icons/Envelope.png" alt="Icon envelope"> 
-                                </div>
-                                <p class="text_example_second">Pedido aceito!</p>
-                            </div> 
-                        </div>
-                        <div class="col">
-                            <div class="example-icons">
-                                <div class="image_example_icon">
-                                    <img src="/icons/Editar.png" alt="Icon caneta"> 
-                                </div>
-                                <p class="text_example_second">Avalie o serviço</p>
+                    <div class="row-2">
+                        <div class="example-icons">
+                            <div class="image_example_icon">
+                                <img src="/icons/Pessoa2-vector.png" alt="Icon pessoa e computador">
                             </div>
+                            <p class="text_example_second">Faça o pedido</p>
+                        </div>
+                        <div class="example-icons">
+                            <div class="image_example_icon">
+                                <img src="/icons/Envelope.png" alt="Icon envelope">
+                            </div>
+                            <p class="text_example_second">Pedido aceito!</p>
                         </div>
                     </div>
                 </div>
@@ -140,43 +125,32 @@
         <div class="container_geral_third">
             <div class="container_third">
                 <div class="text_container_third">
-                    <h2>Como é o FREELLA para o profissional?</h2>
+                    <h3>Como é o FREELLA para o profissional?</h3>
                     <p>Bem-vindo à nossa plataforma! Estamos animados para ajudar você, estudante universitário, a encontrar oportunidades de trabalho como freelancer.</p>
                 </div>
                 <div class="container_example_third">
-                    <div class="row row-cols-3">
-                        <div class="col">
-                            <div class="example-icons">
-                                <div class="image_example_icon">
-                                    <img src="/icons/pessoa_checked.png" alt="Icon pessoa e checked"> 
-                                </div>
-                                <p class="text_example_third">Pegue projetos</p>
-                            </div> 
-                        </div>
-                        <div class="col">
-                            <div class="example-icons">
-                                <div class="image_example_icon">
-                                    <img src="/icons/prancheta.png" alt="Icon prancheta"> 
-                                </div>
-                                <p class="text_example_third">Execute o trabalho</p>
-                            </div> 
-                        </div>
-                        <div class="col">
-                            <div class="example-icons">
-                                <div class="image_example_icon">
-                                    <img src="/icons/Editar-roxo.png" alt="Icon caneta"> 
-                                </div>
-                                <p class="text_example_third">Avalie o serviço</p>
+                    <div class="row-3">
+                        <div class="example-icons">
+                            <div class="image_example_icon">
+                                <img src="/icons/pessoa_checked.png" alt="Icon pessoa checked">
                             </div>
+                            <p class="text_example_third">Pegue projetos</p>
+                        </div>
+                        <div class="example-icons">
+                            <div class="image_example_icon">
+                                <img src="/icons/prancheta.png" alt="Icon prancheta">
+                            </div>
+                            <p class="text_example_third">Execute o trabalho</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-     <!-- Quarta seção: Dúvidas -->
-    <section class="fourth_section">
-            <div class="container_fourth">
+         <!-- Quarta seção: Dúvidas -->
+         <section class="fourth_section">
+            <div class="center_container">
+                <div class="container_fourth">
                 <div class="text_container_fourth">
                     <h3>Dúvidas?</h3>
                 </div>
@@ -213,5 +187,8 @@
                     </div>
                 </div>            
             </div>
+            </div>
     </section>
- </body>
+</body>   
+      
+    
