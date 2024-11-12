@@ -1,0 +1,66 @@
+.condimento{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-purple-primary);
+    width: 700px;
+    height: 50px;
+    margin-top: 70px;
+    border-radius: 5px;
+
+    div{
+        display: flex;
+        gap: 20px;
+        font-weight: bold;
+    }
+
+    section{
+       display: flex;
+       align-items: center;
+       gap: 250px;
+    }
+
+    .color1{
+        color: var(--color-purple-tertiary)
+    }
+
+    .color2{
+        color: var(--color-white-secondary)
+    }
+
+    a{
+        background-color: var(--color-purple-tertiary);
+        color: var(--color-white-secondary);
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 5px;
+        font-weight: bold;
+        width: 120px;
+        text-align: center;
+
+    }
+}
+
+.pesquisa{
+    background-color: var(--color-gray-dark);
+    border: none;
+    height: 50px;
+    width: 300px;
+    border-radius: 12px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+
+    img{
+        
+    }
+
+    input{
+        border: none;
+        background-color: var(--color-gray-dark);
+        margin: 15px;      
+        all: unset;
+        color: var(--color-white-secondary);
+        margin-top: 10px;
+    }
+}

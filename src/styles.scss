@@ -1,15 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
 :root{
-    --color-black-light: #1C1C1C;
-    --color-gray-dark:#b0b0b0;
-    --color-gray:#d3d3d3;
+    --color-purple-primary: #D2B4DE;
+    --color-white-secondary: #F0F0F0;
+    --color-purple-tertiary: #7D3C98;
     --color-gray-light:#d9d9d9;
-
-    --color-purple-primary: #7D3C98;
-    --color-purple-secundary: #D2B4DE;
-    --color-purple-tertiary: #F0F0F0;
+    --color-gray:#d3d3d3;
+    --color-gray-dark:#b0b0b0;
+    --color-black-light: rgba(28, 28, 28, 1);
 }
 
 *{
     font-family: Poppins;
+    margin: 0px;
 }
