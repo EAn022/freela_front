@@ -6,12 +6,14 @@ import { MyProfileComponent } from './components/my-profile/my-profile.component
 import { GerenciamentoComponent } from './components/gerenciamento/gerenciamento.component';
 import { LoginComponent } from './components/login/login.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { CriarPerfilComponent } from './components/criar-perfil/criar-perfil.component';
 
 export const routes: Routes = [
    
     {path: '', component: LandingPageComponent},
     {path: 'login', component:  LoginComponent},
     {path: 'cadastro', component: CadastroComponent},
+    {path: 'perfil', component: CriarPerfilComponent},
     {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/profissional', component: HomeProfissionalComponent},
     {path: 'home/admin', component: HomePageAdminComponent},
