@@ -14,7 +14,7 @@ body {
         gap: 20px;
         margin-top: 13dvh;
         .usuario_container {
-            margin-top: 10dvh;
+            margin-top: 5dvh;
             width: 470px;
 
             h4 {
@@ -115,6 +115,29 @@ body {
                         text-align: left;
                     }
                 }
+            }
+        }
+    }
+    @media (max-width: 780px) {
+        .container{
+            display: flex;
+            flex-direction: column;
+            margin-top: 5dvh;
+            .usuario_container{
+                width: 290px;
+                .campo_descricao{
+                    textarea{
+                        height: 160px;
+                    }
+                }
+                .botoes{
+                    flex-direction: column;
+                    gap: 20px;
+                }
+            }
+            .status_proposta{
+                width: 291px;
+                margin-bottom: 15px;
             }
         }
     }
