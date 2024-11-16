@@ -7,6 +7,7 @@ import { GerenciamentoComponent } from './components/gerenciamento/gerenciamento
 import { LoginComponent } from './components/login/login.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { CriarPerfilComponent } from './components/criar-perfil/criar-perfil.component';
+import { MeuPerfilClienteComponent } from './components/meu-perfil-cliente/meu-perfil-cliente.component';
 
 export const routes: Routes = [
    
@@ -17,5 +18,6 @@ export const routes: Routes = [
     {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/profissional', component: HomeProfissionalComponent},
     {path: 'home/admin', component: HomePageAdminComponent},
+    {path: 'meuperfil', component: MeuPerfilClienteComponent},
     {path: '**', redirectTo: ''}
 ];

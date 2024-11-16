@@ -1,0 +1,40 @@
+<body>
+    <app-navbar-cliente></app-navbar-cliente>
+    <div class="container">
+        <div class="usuario_container">
+            <h4>Nome completo</h4>
+            <div class="campo_descrição">
+                <textarea id="descricao" [value]="descricao" readonly></textarea>
+            </div>
+            <div class="campo_sociais">
+                <h6>Links sociais</h6>
+                <div class="campo_link">
+                    <ul>
+                        <li>Link 1</li>
+                        <li>Link 2</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="botoes">
+                <div class="postagem">
+                    <button>Nova postagem</button>
+                </div>
+                <div class="editar">
+                    <button>EDITAR PERFIL</button>
+                </div>
+            </div>
+        </div>
+        <div class="status_proposta">
+            <p class="status">Status de proposta</p>
+            <div class="card_projeto">
+                <p><span class="titulo">Título do projeto</span></p>
+                <div class="card_info">
+                    <p>Trabalho em andamento com: <span class="info">XXXXXXXXXX</span></p>
+                    <p>Telefone: <span class="info">(XX) XXXXX-XXXX</span></p>
+                    <p>Whatsapp: <span class="info">(XX) YYYYY-YYYY</span></p>
+                    <p>Email: <span class="info">XXXXXX&#64;gmail.com</span></p>
+                </div>
+            </div>            
+        </div>
+    </div>
+</body>
