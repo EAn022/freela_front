@@ -1,0 +1,119 @@
+body {
+    background-color: var(--color-white-secondary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 90vh;
+
+        .card_postagem {
+            display: flex;
+            flex-direction: column;
+            background-color: var(--color-purple-primary);
+            padding: 20px;
+            border-radius: 10px; 
+            width: 720px;
+            height: 400px;
+            text-align: center;
+            h4{
+                font-size: 25px;
+                color: var(--color-white-secondary);
+                font-weight: 700;
+                padding: 10px;
+            }
+            form{
+                text-align: left;
+                .nome_servico{
+                    display: flex;
+                    flex-direction: column;
+                    width: 45%;
+                    gap: 10px;
+                    label{
+                        font-size: 17px;
+                        font-weight: 600;
+                        color: var(--color-white-secondary);
+                    }
+                    input{
+                        background-color: transparent;
+                        border: 2px solid var(--color-gray-light);
+                        border-radius: 8px;
+                        height: 35px;
+                        margin-bottom: 30px;
+                        color: var(--color-white-secondary);
+                    }
+                }
+                .descricao_servico{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    label{
+                        font-size: 17px;
+                        font-weight: 600;
+                        color: var(--color-white-secondary);
+                    }
+                    textarea{
+                        background-color: transparent;
+                        border: 2px solid var(--color-gray-light);
+                        border-radius: 8px;
+                        height: 80px;
+                        margin-bottom: 30px;
+                        resize: none;
+                        color: var(--color-white-secondary);
+                    }
+                }
+                .botao_postagem{
+                    display: flex;
+                    justify-content: center;
+                    button{
+                        padding: 8px 10px;
+                        width: 33%;
+                        background-color: var(--color-purple-tertiary);
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 20px;
+                        color: var(--color-white-secondary);
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width: 780px) {
+        .container {
+            .card_postagem {
+                width: 95%;
+                padding: 10px;
+
+                h4 {
+                    font-size: 20px; 
+                }
+
+                form {
+                    .nome_servico, .descricao_servico {
+                        width: 100%;
+                        label {
+                            font-size: 15px;
+                        }
+
+                        input, textarea {
+                            font-size: 14px;
+                        }
+                        textarea{
+                            height: 70px;
+                        }
+                    }
+
+                    .botao_postagem button {
+                        font-size: 14px;
+                        margin-top: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
