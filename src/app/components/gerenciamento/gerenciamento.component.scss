@@ -1,12 +1,23 @@
-.condimento{
+.conteudo{
     display: flex;
     justify-content: space-around;
+
+}
+
+.separador{
+     margin-top: 100px;
+}
+
+.condimento{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--color-purple-primary);
     width: 700px;
     height: 50px;
-    margin-top: 70px;
+    margin-top: 20px;
     border-radius: 5px;
+    padding: 10px;
 
     div{
         display: flex;
@@ -47,20 +58,21 @@
     height: 50px;
     width: 300px;
     border-radius: 12px;
-    text-align: center;
-    justify-content: center;
-    margin-top: 10px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
 
-    img{
-        
+    button{
+       border: none;
+       background-color: var(--color-gray-dark);
+
     }
 
     input{
         border: none;
-        background-color: var(--color-gray-dark);
-        margin: 15px;      
+        background-color: var(--color-gray-dark);      
         all: unset;
         color: var(--color-white-secondary);
-        margin-top: 10px;
     }
+    
 }

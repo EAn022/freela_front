@@ -1,54 +1,59 @@
-.profile{
-    .data{
-        width: 600px;
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    color:var(--color-gray-dark);
+}
 
-        h4{
-            color: var(--color-gray-dark);
-            font-size: 32px;
-            font-weight: bold;
-        }
+.cards{
+    background-color: var(--color-purple-primary);
+    color: var(--color-white-secondary);
+    border-radius: 5px;
+    padding: 10px;
+    height: auto;
+    width: 400px;
+}
 
-        .about-me{
-            border-radius: 5px;
-            border: 1px solid var(--color-gray-dark);
-            width: 100%;
-            min-height: 160px;
-
-            p{
-                color: var(--color-gray-dark);
-                font-size: 16px;
-                font-weight: 300;
-            }
-        }
-
-        h6{
-            color: var(--color-gray-dark);
-            font-size: 20px;
-            font-weight: bold;
-        }
-
-        li{
-            color: var(--color-gray-dark);
-            font-size: 20px;
-            font-weight: 300;
-        }
-
-        button{
-            width: 264px;
-            border: none;
-            border-radius: 5px;
-            background-color: var(--color-purple-primary);
-            padding: 12px;
-            margin-left: auto;
-            margin-right: auto;
-
-            color: var(--color-purple-tertiary);
-            font-size: 16px;
-            font-weight: 600;
-        }
+.principal{
+    margin-top: 70px;
+    
+    input{
+        border-radius: 5px;
+        border-style: solid;
+        width: 500px;
+        padding: 5px; 
+        padding-bottom: 100px;
+        
     }
 
-    .proposals{
-        max-width: 400px;
+    button{
+        border: none;
+        border-radius: 5px;
+        color: var(--color-white-secondary);
+        background-color: var(--color-purple-tertiary);
+        width: 200px;
+        height: 40px;
+        margin-left: 300px;
+    }
+
+    p{
+        
+        font-weight: bold;
+    }
+}
+
+
+.areacards{
+    margin-bottom: 5px;
+    padding: 5px;
+
+    h2{
+        text-align: center;
+    }
+
+    .status{
+        color: var(--color-purple-tertiary);
+        font-weight: bold;
+        text-align: end;
     }
 }

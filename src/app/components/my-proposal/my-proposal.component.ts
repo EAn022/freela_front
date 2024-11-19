@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
 
 @Component({
-  selector: 'app-proposal',
+  selector: 'app-my-proposal',
   standalone: true,
   imports: [NavbarComponent],
-  templateUrl: './proposal.component.html',
-  styleUrl: './proposal.component.scss'
+  templateUrl: './my-proposal.component.html',
+  styleUrl: './my-proposal.component.scss'
 })
-export class ProposalComponent {
+export class MyProposalComponent {
 
 }
