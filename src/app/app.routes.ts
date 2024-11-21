@@ -16,11 +16,14 @@ export const routes: Routes = [
     {path: 'login', component:  LoginComponent},
     {path: 'cadastro', component: CadastroComponent},
     {path: 'perfil', component: CriarPerfilComponent},
-    {path: 'gerenciamento', component: GerenciamentoComponent},
+    //Profissional
     {path: 'home/profissional', component: HomeProfissionalComponent},
+    // Admin
+    {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/admin', component: HomePageAdminComponent},
-
+    // Cliente
     {path: 'meuperfil', component: MeuPerfilClienteComponent},
     {path: 'post', component: NovaPostagemClienteComponent},
+
     {path: '**', redirectTo: ''}
 ];

@@ -11,17 +11,17 @@
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sobre nós</a>
+                            <a class="nav-link" href="#section_2">Sobre nós</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Dúvidas</a>
+                            <a class="nav-link" href="section_4">Dúvidas</a>
                         </li>
                     </ul>
                     <div class="navbar-end">
-                        <a class="nav-link" href="#">Cadastre-se</a>
+                        <a class="nav-link" routerLink="/cadastro">Cadastre-se</a>
                         <div class="login">
                             <img src="/icons/entrar-roxo.png" alt="ícone sair">
-                            <a class="nav-link" href="#">Entrar</a>
+                            <a class="nav-link" routerLink="/login">Entrar</a>
                         </div>
                     </div>
                 </div>
@@ -35,10 +35,10 @@
           </button>
           <div class="bar_style">
             <a href="#" class="bar-item button">Home</a>
-            <a href="#" class="bar-item button">Sobre nós</a>
-            <a href="#" class="bar-item button">Dúvidas</a>
-            <a href="#" class="bar-item button">Cadastre-se</a>
-            <a href="#" class="bar-item button">
+            <a href="#section_2" class="bar-item button">Sobre nós</a>
+            <a href="#section_4" class="bar-item button">Dúvidas</a>
+            <a routerLink="/cadastro" class="bar-item button">Cadastre-se</a>
+            <a routerLink="/login" class="bar-item button">
                 <img src="/icons/entrar-roxo.png" alt="Entrar">
                 <p>Entrar</p>
             </a>
@@ -46,7 +46,7 @@
         </div>
     }
     <!-- Primeira seção: apresentação -->
-    <section class="first_section">
+    <section class="first_section" id="section_1">
         <div class="container">
             <div class="text_container">
                 <h5>FREELLA</h5>
@@ -94,7 +94,7 @@
         </div>
     </section>
     <!-- Segunda seção: Freela para cliente -->
-    <section class="second_section">
+    <section class="second_section" id="section_2">
         <div class="container_geral_second">
             <div class="container_second">
                 <div class="text_container_second">
@@ -121,7 +121,7 @@
         </div>
     </section>
     <!-- Terceira seção: Frella para o profissional -->
-    <section class="third_section">
+    <section class="third_section" id="section_3">
         <div class="container_geral_third">
             <div class="container_third">
                 <div class="text_container_third">
@@ -148,9 +148,9 @@
         </div>
     </section>
          <!-- Quarta seção: Dúvidas -->
-         <section class="fourth_section">
-            <div class="center_container">
-                <div class="container_fourth">
+    <section class="fourth_section" id="section_4">
+        <div class="center_container">
+            <div class="container_fourth">
                 <div class="text_container_fourth">
                     <h3>Dúvidas?</h3>
                 </div>
@@ -187,7 +187,7 @@
                     </div>
                 </div>            
             </div>
-            </div>
+        </div>
     </section>
 </body>   
       
