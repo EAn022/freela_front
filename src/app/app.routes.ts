@@ -9,6 +9,7 @@ import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { CriarPerfilComponent } from './components/criar-perfil/criar-perfil.component';
 import { MeuPerfilClienteComponent } from './components/meu-perfil-cliente/meu-perfil-cliente.component';
 import { NovaPostagemClienteComponent } from './components/nova-postagem-cliente/nova-postagem-cliente.component';
+import { PropostasClienteComponent } from './components/propostas-cliente/propostas-cliente.component';
 
 export const routes: Routes = [
    
@@ -24,6 +25,7 @@ export const routes: Routes = [
     // Cliente
     {path: 'meuperfil', component: MeuPerfilClienteComponent},
     {path: 'post', component: NovaPostagemClienteComponent},
+    {path: 'proposta', component: PropostasClienteComponent},
 
     {path: '**', redirectTo: ''}
 ];
