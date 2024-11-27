@@ -22,6 +22,9 @@ export const routes: Routes = [
     {path: 'perfil', component: CriarPerfilComponent},
     //Profissional
     {path: 'home/profissional', component: HomeProfissionalComponent},
+    {path: 'profile', component: MyProfileComponent},
+    {path: 'proposal/create', component: ProposalComponent},
+    {path: 'profile/my-proposal', component: MyProposalComponent}
     // Admin
     {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/admin', component: HomePageAdminComponent},
@@ -30,8 +33,4 @@ export const routes: Routes = [
     {path: 'post', component: NovaPostagemClienteComponent},
     {path: 'propostas', component: PropostasClienteComponent},
     {path: 'perfilProfissional', component: PerfilProfissionalClienteComponent},
-
-    {path: 'profile', component: MyProfileComponent},
-    {path: 'proposal/create', component: ProposalComponent},
-    {path: 'profile/my-proposal', component: MyProposalComponent}
 ];
