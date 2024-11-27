@@ -2,12 +2,12 @@ import { Component } from '@angular/core';
 import { NavbarClienteComponent } from '../navbar-cliente/navbar-cliente.component';
 
 @Component({
-  selector: 'app-my-proposal',
+  selector: 'app-nova-postagem-cliente',
   standalone: true,
   imports: [NavbarClienteComponent],
-  templateUrl: './my-proposal.component.html',
-  styleUrl: './my-proposal.component.scss'
+  templateUrl: './nova-postagem-cliente.component.html',
+  styleUrl: './nova-postagem-cliente.component.scss'
 })
-export class MyProposalComponent {
+export class NovaPostagemClienteComponent {
 
 }

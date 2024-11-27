@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from "../navbar/navbar.component";
+import { NavbarClienteComponent } from '../navbar-cliente/navbar-cliente.component';
 
 @Component({
   selector: 'app-home-profissional',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarClienteComponent],
   templateUrl: './home-profissional.component.html',
   styleUrl: './home-profissional.component.scss'
 })

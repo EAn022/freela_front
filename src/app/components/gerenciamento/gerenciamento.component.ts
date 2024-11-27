@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
+import { NavbarClienteComponent } from '../navbar-cliente/navbar-cliente.component';
 
 @Component({
   selector: 'app-gerenciamento',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarClienteComponent],
   templateUrl: './gerenciamento.component.html',
   styleUrl: './gerenciamento.component.scss'
 })

@@ -1,0 +1,107 @@
+body{
+    .navbar {
+        background-color: var(--color-gray-light) !important;
+      
+        .container-fluid {
+          padding: 3px;
+          display: flex;
+          justify-content: flex-end;
+        }
+        .navbar-collapse {
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: auto;
+      
+          .navbar-nav {
+            margin-left: 7vh;
+            gap: 65px;
+      
+            .nav-item {
+              .nav-link {
+                color: var(--color-gray-dark);
+              }
+            }
+          }
+          
+          .navbar-end {
+            display: flex;
+            margin-right: 10vh;
+            align-items: center;
+            gap: 15vh;
+            color: var(--color-purple-tertiary);
+      
+            .nav-link {
+              color: inherit;
+            }
+      
+            .sair {
+              display: flex;
+              align-items: center;
+              gap: 5px;
+      
+              img {
+                height: 25px;
+              }
+            }
+          }
+        }
+    }
+    //Sidebar
+    .sidebar{
+        position: fixed;
+        width: 230px;
+        top: 0;
+        right: 0;
+        height: 100%;
+        background-color: var(--color-white-secondary);
+        z-index: 1000;
+  
+        .bar-item{
+          cursor: pointer;
+          display: flex;
+          justify-self: end;
+          border: none;
+          margin: 3vh 3vh 1.5vh 0;
+        }
+        .bar_style{
+            display: flex;
+            flex-direction: column;
+            a{
+              text-decoration: none;
+              font-size: 20px;
+              font-weight: bold;
+              color: var(--color-purple-tertiary);
+              padding: 20px 0;
+              margin: 0;
+              margin-left: 3vh;
+              border-bottom: 1px solid var(--color-gray-dark);
+              &:first-child{
+                border-top: 1px solid var(--color-gray-dark);
+              }
+              &:last-child{
+                color: var(--color-purple-tertiary);
+                display: flex;
+                gap: 10px;
+                img{
+                  height: 30px;
+                  margin-top: 3px;
+                }
+              }
+              &:nth-last-child(2){
+                color: var(--color-gray-dark);
+              }
+            }
+        }
+    }
+    .navbar{
+      //Botão togler
+      .navbar-toggler {
+        border: none;
+        justify-self: flex-end;
+        margin-right: 3vh;
+        img{
+          height: 7vh;
+        }
+      }
+    }
+}

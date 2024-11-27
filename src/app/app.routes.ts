@@ -6,6 +6,9 @@ import { MyProfileComponent } from './components/my-profile/my-profile.component
 import { GerenciamentoComponent } from './components/gerenciamento/gerenciamento.component';
 import { LoginComponent } from './components/login/login.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
+import { CriarPerfilComponent } from './components/criar-perfil/criar-perfil.component';
+import { MeuPerfilClienteComponent } from './components/meu-perfil-cliente/meu-perfil-cliente.component';
+import { NovaPostagemClienteComponent } from './components/nova-postagem-cliente/nova-postagem-cliente.component';
 import { ProposalComponent } from './components/proposal/proposal.component';
 import { MyProposalComponent } from './components/my-proposal/my-proposal.component';
 
@@ -13,10 +16,13 @@ export const routes: Routes = [
    
     {path: '', component: LandingPageComponent},
     {path: 'login', component:  LoginComponent},
-    {path: 'register', component: CadastroComponent},
+    {path: 'cadastro', component: CadastroComponent},
+    {path: 'perfil', component: CriarPerfilComponent},
+    {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/profissional', component: HomeProfissionalComponent},
-    {path: 'admin/home', component: HomePageAdminComponent},
-    {path: 'admin/gerenciamento', component: GerenciamentoComponent},
+    {path: 'home/admin', component: HomePageAdminComponent},
+    {path: 'meuperfil', component: MeuPerfilClienteComponent},
+    {path: 'post', component: NovaPostagemClienteComponent},
     {path: 'profile', component: MyProfileComponent},
     {path: 'proposal/create', component: ProposalComponent},
     {path: 'profile/my-proposal', component: MyProposalComponent}

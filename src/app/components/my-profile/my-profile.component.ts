@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../navbar/navbar.component';
+import { NavbarClienteComponent } from '../navbar-cliente/navbar-cliente.component';
+
 
 @Component({
   selector: 'app-my-profile',
   standalone: true,
-  imports: [NavbarComponent],
+  imports: [NavbarClienteComponent],
   templateUrl: './my-profile.component.html',
   styleUrl: './my-profile.component.scss'
 })
