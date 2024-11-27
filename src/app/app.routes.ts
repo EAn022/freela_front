@@ -7,10 +7,10 @@ import { GerenciamentoComponent } from './components/gerenciamento/gerenciamento
 import { LoginComponent } from './components/login/login.component';
 import { CadastroComponent } from './components/cadastro/cadastro.component';
 import { CriarPerfilComponent } from './components/criar-perfil/criar-perfil.component';
-import { MeuPerfilClienteComponent } from './components/meu-perfil-cliente/meu-perfil-cliente.component';
 import { NovaPostagemClienteComponent } from './components/nova-postagem-cliente/nova-postagem-cliente.component';
 import { PropostasClienteComponent } from './components/propostas-cliente/propostas-cliente.component';
 import { PerfilProfissionalClienteComponent } from './perfil-profissional-cliente/perfil-profissional-cliente.component';
+import { HomePageClienteComponent } from './components/home-page-cliente/home-page-cliente.component';
 
 export const routes: Routes = [
    
@@ -24,9 +24,9 @@ export const routes: Routes = [
     {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/admin', component: HomePageAdminComponent},
     // Cliente
-    {path: 'meuperfil', component: MeuPerfilClienteComponent},
+    {path: 'home/cliente', component: HomePageClienteComponent},
     {path: 'post', component: NovaPostagemClienteComponent},
-    {path: 'proposta', component: PropostasClienteComponent},
+    {path: 'propostas', component: PropostasClienteComponent},
     {path: 'perfilProfissional', component: PerfilProfissionalClienteComponent},
 
     {path: '**', redirectTo: ''}
