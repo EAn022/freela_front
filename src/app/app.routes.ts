@@ -24,7 +24,7 @@ export const routes: Routes = [
     {path: 'home/profissional', component: HomeProfissionalComponent},
     {path: 'profile', component: MyProfileComponent},
     {path: 'proposal/create', component: ProposalComponent},
-    {path: 'profile/my-proposal', component: MyProposalComponent}
+    {path: 'profile/my-proposal', component: MyProposalComponent},
     // Admin
     {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/admin', component: HomePageAdminComponent},
