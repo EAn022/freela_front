@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,} from '@angular/core';
 import { NavbarClienteComponent } from '../navbar-cliente/navbar-cliente.component';
 
 @Component({
@@ -9,5 +9,4 @@ import { NavbarClienteComponent } from '../navbar-cliente/navbar-cliente.compone
   styleUrl: './nova-postagem-cliente.component.scss'
 })
 export class NovaPostagemClienteComponent {
-
 }

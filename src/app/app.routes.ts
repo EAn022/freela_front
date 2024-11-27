@@ -10,6 +10,7 @@ import { CriarPerfilComponent } from './components/criar-perfil/criar-perfil.com
 import { MeuPerfilClienteComponent } from './components/meu-perfil-cliente/meu-perfil-cliente.component';
 import { NovaPostagemClienteComponent } from './components/nova-postagem-cliente/nova-postagem-cliente.component';
 import { PropostasClienteComponent } from './components/propostas-cliente/propostas-cliente.component';
+import { PerfilProfissionalClienteComponent } from './perfil-profissional-cliente/perfil-profissional-cliente.component';
 
 export const routes: Routes = [
    
@@ -26,6 +27,7 @@ export const routes: Routes = [
     {path: 'meuperfil', component: MeuPerfilClienteComponent},
     {path: 'post', component: NovaPostagemClienteComponent},
     {path: 'proposta', component: PropostasClienteComponent},
+    {path: 'perfilProfissional', component: PerfilProfissionalClienteComponent},
 
     {path: '**', redirectTo: ''}
 ];

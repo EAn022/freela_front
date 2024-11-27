@@ -81,6 +81,22 @@ body {
                     }
                 }
             }
+            .modal-dialog {
+                justify-content: center;
+            }
+            
+              .modal-content {
+                width: 70%;
+                background-color: var(--color-gray-light);
+                padding: 30px;
+            }
+            
+              .modal-body {
+                color: var(--color-purple-tertiary);
+                font-size: 20px;
+                font-weight: bold;
+                padding: 0px;
+            }
         }
     }
     @media (max-width: 780px) {
@@ -112,6 +128,10 @@ body {
                         font-size: 14px;
                         margin-top: 20px;
                     }
+                }
+                .modal-content{
+                    width: 100%;
+                    font-size: 18px;
                 }
             }
         }

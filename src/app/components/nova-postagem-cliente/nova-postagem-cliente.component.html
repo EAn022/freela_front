@@ -3,7 +3,7 @@
     <div class="container">
         <div class="card_postagem">
             <h4>Nova postagem</h4>
-            <form action="#">
+            <form>
                 <div class="nome_servico">
                     <label for="nome_servico">Nome do serviço</label>
                     <input type="text" id="nome_servico" required />
@@ -13,10 +13,19 @@
                     <textarea id="descricao_servico" required ></textarea>
                 </div>
                 <div class="botao_postagem">
-                    <button type="submit">Publicar</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Publicar</button>
                 </div>
             </form>
-            
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                        Serviço publicado
+                        <img src="/icons/checked_popup.png" alt="Checked icon">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
