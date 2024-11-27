@@ -11,6 +11,8 @@ import { NovaPostagemClienteComponent } from './components/nova-postagem-cliente
 import { PropostasClienteComponent } from './components/propostas-cliente/propostas-cliente.component';
 import { PerfilProfissionalClienteComponent } from './perfil-profissional-cliente/perfil-profissional-cliente.component';
 import { HomePageClienteComponent } from './components/home-page-cliente/home-page-cliente.component';
+import { ProposalComponent } from './components/proposal/proposal.component';
+import { MyProposalComponent } from './components/my-proposal/my-proposal.component';
 
 export const routes: Routes = [
    
@@ -23,11 +25,13 @@ export const routes: Routes = [
     // Admin
     {path: 'gerenciamento', component: GerenciamentoComponent},
     {path: 'home/admin', component: HomePageAdminComponent},
-    // Cliente
+    // Cliente    
     {path: 'home/cliente', component: HomePageClienteComponent},
     {path: 'post', component: NovaPostagemClienteComponent},
     {path: 'propostas', component: PropostasClienteComponent},
     {path: 'perfilProfissional', component: PerfilProfissionalClienteComponent},
 
-    {path: '**', redirectTo: ''}
+    {path: 'profile', component: MyProfileComponent},
+    {path: 'proposal/create', component: ProposalComponent},
+    {path: 'profile/my-proposal', component: MyProposalComponent}
 ];

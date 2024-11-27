@@ -1,19 +1,53 @@
-<div class="home">
-    <!-- navbar -->
-    <header>
-        <app-navbar (activeLinkChange)="setActive($event)"></app-navbar>
-    </header>
-    <!-- conteúdo -->
-    <section>
-        @if (currentLink === 'home') {
-            <app-card-services></app-card-services>
-        }
-        @if (currentLink === 'perfil') {
-            <app-my-profile></app-my-profile>
-        }
-        @if (currentLink === 'propostas') {
-            <app-proposal></app-proposal>
-        }
-    </section>
+<app-navbar-cliente></app-navbar-cliente>
 
-</div>
+
+<section class="banner">
+
+    <section class="conteudo">
+        <section class="container">
+            <br>
+            <div class="names">
+                <h4 class="color-names">Nome completo</h4>
+                <h4 class="color-disponi">Disponível</h4></div>
+                <br>
+            <div class="contenidos">
+                <p>Título do Projeto</p>
+                <ul>Responsabilidades:</ul>
+                <li>Desenvolver e manter aplicações web responsivas utilizando HTML, CSS e Javascript.</li>
+                <li>Colaborar com designers e outros desenvolvedores</li>
+                <br>
+            </div>
+            <div class="botoes">
+                <a class="button-1" href="#">Tenho interesse</a>
+            </div>
+            <br>
+        </section>
+    </section>
+    
+</section>
+
+<section class="banner">
+
+    <section class="conteudo">
+        <section class="container">
+            <br>
+            <div class="names">
+                <h4 class="color-names">Nome completo</h4>
+                <h4 class="color-disponi">Disponível</h4></div>
+                <br>
+            <div class="contenidos">
+                <p>Título do Projeto</p>
+                <ul>Responsabilidades:</ul>
+                <li>Desenvolver e manter aplicações web responsivas utilizando HTML, CSS e Javascript.</li>
+                <li>Colaborar com ddesigners e outros desenvolvedores</li>
+                <br>
+            </div>
+            <div class="botoes">
+                <a class="button-1" href="#">Tenho interesse</a>
+            </div>
+            <br>
+        </section>
+    </section>
+    
+</section>
+

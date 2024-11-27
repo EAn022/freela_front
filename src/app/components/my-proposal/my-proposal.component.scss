@@ -2,7 +2,8 @@
     background-color: var(--color-purple-primary);
     border-radius: 10px;
     color: var(--color-white-secondary);
-    margin-top: 140px;
+    margin-top: 70px;
+    margin-bottom: 10px;
     width: 550px;
     padding: 20px;
 
@@ -35,14 +36,8 @@
         align-items: center;
         justify-content: center;
 
-        button{
-            color:var(--color-white-secondary);
-            background-color: var(--color-purple-tertiary);
-            border-style: none;
-            border-radius: 5px;
-            justify-content: center;
-            width: 200px;
-            height: 50px;
-        }
+       p{
+        color: var(--color-purple-tertiary);
+       }
     }
 }

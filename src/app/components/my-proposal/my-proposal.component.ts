@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
 import { NavbarClienteComponent } from '../navbar-cliente/navbar-cliente.component';
 
-
 @Component({
-  selector: 'app-my-profile',
+  selector: 'app-my-proposal',
   standalone: true,
   imports: [NavbarClienteComponent],
-  templateUrl: './my-profile.component.html',
-  styleUrl: './my-profile.component.scss'
+  templateUrl: './my-proposal.component.html',
+  styleUrl: './my-proposal.component.scss'
 })
-export class MyProfileComponent {
+export class MyProposalComponent {
 
 }
