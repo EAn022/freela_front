@@ -1,0 +1,15 @@
+<div class="home">
+    <!-- navbar -->
+    <header>
+        <app-navbar-cliente routerLinkActive="active"></app-navbar-cliente>
+    </header>
+    <!-- conteúdo -->
+    <section>
+        @if (currentLink === 'meuperfil') {
+            <app-meu-perfil-cliente></app-meu-perfil-cliente>
+        }
+        @if (currentLink === 'proposta') {
+            <app-propostas-cliente></app-propostas-cliente>
+        }
+    </section>
+</div>
